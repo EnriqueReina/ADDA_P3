@@ -1,0 +1,30 @@
+#VERTEX#
+Giralda
+Alcazares
+Barrio Santa Cruz
+Plaza España
+El Salvador
+Torre del Oro
+Puente de Triana
+Arco de la Macarena
+Muralla
+Maestranza
+#EDGE#
+Giralda,El Salvador,G-EL,50.0
+Giralda,Torre del Oro,G-TdO,50.5
+Giralda,Maestranza,G-Maest,10.0
+Giralda,Muralla,G-M,20.0
+Giralda,Alcazares,G-A,30.0
+Giralda,Barrio Santa Cruz,G-A,30.0
+Alcazares,Barrio Santa Cruz,A-B,10
+Alcazares,Plaza España,A-P,17.5
+Alcazares,Torre del Oro,A-TdO, 50.0
+Barrio Santa Cruz,Puente de Triana,B-PdT,60.0
+Plaza España,El Salvador,P-EL,10.0
+Plaza España,Puente de Triana,P-PdT,45.5
+Plaza España,Arco de la Macarena,P-AdM,53.0
+El Salvador,Maestranza,EL-Maest,60.0
+Torre del Oro,Puente de Triana,TdO-PdT,1.00
+Puente de Triana,Maestranza,PdT-Maest,37.0
+Arco de la Macarena,Maestranza,AdM-Maest,27.0
+Arco de la Macarena,Muralla,AdM-M,10.0

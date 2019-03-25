@@ -1,0 +1,28 @@
+strict graph G {
+  1 [ label="Giralda (450.0)" ];
+  2 [ label="Alcazares (392.0)" ];
+  3 [ label="Barrio Santa Cruz (303.0)" ];
+  4 [ label="Plaza España (297.0)" ];
+  5 [ label="El Salvador (295.0)" ];
+  6 [ label="Torre del Oro (228.0)" ];
+  7 [ label="Puente de Triana (227.0)" ];
+  8 [ label="Arco de la Macarena (220.0)" ];
+  9 [ label="Muralla (219.0)" ];
+  10 [ label="Maestranza (197.0)" ];
+  1 -- 5 [ label="G-EL (50.0)" ];
+  1 -- 6 [ label="G-TdO (50.5)" ];
+  1 -- 10 [ label="G-Maest (10.0)" ];
+  1 -- 9 [ label="G-M (20.0)" ];
+  2 -- 3 [ label="A-B (10.0)" ];
+  2 -- 4 [ label="A-P (17.5)" ];
+  2 -- 6 [ label="A-TdO (50.0)" ];
+  3 -- 7 [ label="B-PdT (60.0)" ];
+  4 -- 5 [ label="P-EL (10.0)" ];
+  4 -- 7 [ label="P-PdT (45.5)" ];
+  4 -- 8 [ label="P-AdM (53.0)" ];
+  5 -- 10 [ label="EL-Maest (60.0)" ];
+  6 -- 7 [ label="TdO-PdT (1.0)" ];
+  7 -- 10 [ label="PdT-Maest (37.0)" ];
+  8 -- 10 [ label="AdM-Maest (27.0)" ];
+  8 -- 9 [ label="AdM-M (10.0)" ];
+}

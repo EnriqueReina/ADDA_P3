@@ -1,0 +1,24 @@
+strict graph G {
+  1 [ label="Sitio0 (20.0)" ];
+  2 [ label="Sitio1 (10.0)" ];
+  3 [ label="Sitio2 (6.0)" ];
+  4 [ label="Sitio3 (8.0)" ];
+  5 [ label="Sitio4 (9.0)" ];
+  6 [ label="Sitio5 (35.0)" ];
+  7 [ label="Sitio6 (2.0)" ];
+  8 [ label="Sitio7 (4.0)" ];
+  9 [ label="Sitio8 (9.0)" ];
+  10 [ label="Sitio9 (6.0)" ];
+  1 -- 2 [ label="c1 (20.0)" ];
+  1 -- 3 [ label="c2 (15.0)" ];
+  2 -- 4 [ label="c3 (10.0)" ];
+  2 -- 5 [ label="c4 (25.0)" ];
+  3 -- 5 [ label="c5 (15.0)" ];
+  4 -- 5 [ label="c6 (5.0)" ];
+  4 -- 6 [ label="c7 (30.0)" ];
+  5 -- 6 [ label="c8 (35.0)" ];
+  5 -- 8 [ label="c9 (40.0)" ];
+  6 -- 7 [ label="c10 (35.0)" ];
+  6 -- 8 [ label="c11 (20.0)" ];
+  9 -- 10 [ label="c12 (15.0)" ];
+}

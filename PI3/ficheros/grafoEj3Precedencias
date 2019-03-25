@@ -1,0 +1,57 @@
+#VERTEX#
+Giralda,450.0
+Alcazares,392.0
+Barrio Santa Cruz,303.0
+Plaza España,297.0
+El Salvador,295.0
+Torre del Oro,228.0
+Puente de Triana,227.0
+Arco de la Macarena,220.0
+Muralla,219.0
+Maestranza,197.0
+#EDGE#
+Giralda,Alcazares,G-A,30.0
+Giralda,Barrio Santa Cruz,G-B,67.0
+Giralda,Plaza España,G-P,40
+Giralda,El Salvador,G-EL,50.0
+Giralda,Torre del Oro,G-TdO,50.5
+Giralda,Puente de Triana,G-PdT,30.0
+Giralda,Arco de la Macarena,G-AdM,25.5
+Giralda,Muralla,G-M,20.0
+Giralda,Maestranza,G-Maest,10.0
+Alcazares,Barrio Santa Cruz,G-B,67.0
+Alcazares,Plaza España,G-P,40
+Alcazares,El Salvador,G-EL,50.0
+Alcazares,Torre del Oro,G-TdO,50.5
+Alcazares,Puente de Triana,G-PdT,30.0
+Alcazares,Arco de la Macarena,G-AdM,25.5
+Alcazares,Muralla,G-M,20.0
+Alcazares,Maestranza,G-Maest,10.0
+Barrio Santa Cruz,Plaza España,G-P,40
+Barrio Santa Cruz,El Salvador,G-EL,50.0
+Barrio Santa Cruz,Torre del Oro,G-TdO,50.5
+Barrio Santa Cruz,Puente de Triana,G-PdT,30.0
+Barrio Santa Cruz,Arco de la Macarena,G-AdM,25.5
+Barrio Santa Cruz,Muralla,G-M,20.0
+Barrio Santa Cruz,Maestranza,G-Maest,10.0
+Plaza España,El Salvador,G-EL,50.0
+Plaza España,Torre del Oro,G-TdO,50.5
+Plaza España,Puente de Triana,G-PdT,30.0
+Plaza España,Arco de la Macarena,G-AdM,25.5
+Plaza España,Muralla,G-M,20.0
+Plaza España,Maestranza,G-Maest,10.0
+El Salvador,Torre del Oro,G-TdO,50.5
+El Salvador,Puente de Triana,G-PdT,30.0
+El Salvador,Arco de la Macarena,G-AdM,25.5
+El Salvador,Muralla,G-M,20.0
+El Salvador,Maestranza,G-Maest,10.0
+Torre del Oro,Puente de Triana,G-PdT,30.0
+Torre del Oro,Arco de la Macarena,G-AdM,25.5
+Torre del Oro,Muralla,G-M,20.0
+Torre del Oro,Maestranza,G-Maest,10.0
+Puente de Triana,Arco de la Macarena,G-AdM,25.5
+Puente de Triana,Muralla,G-M,20.0
+Puente de Triana,Maestranza,G-Maest,10.0
+Arco de la Macarena,Muralla,G-M,20.0
+Arco de la Macarena,Maestranza,G-Maest,10.0
+Muralla,Maestranza,G-Maest,10.0

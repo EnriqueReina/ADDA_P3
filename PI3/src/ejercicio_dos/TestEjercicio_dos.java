@@ -1,6 +1,7 @@
 package ejercicio_dos;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
@@ -37,26 +38,14 @@ public class TestEjercicio_dos {
 		
 		System.out.println("\n=====================APARTADO C========================");
 		
-		List<List<Monumento>> sitios = new ArrayList<>();
+		
 				
-		List<Monumento> grupo1 = new ArrayList<>();
-		grupo1.add(Monumento.create("Sitio5"));
-		grupo1.add(Monumento.create("Sitio7"));
-		grupo1.add(Monumento.create("Sitio9"));
+		List<Monumento> grupo1 = Arrays.asList(Monumento.create("Sitio5"),Monumento.create("Sitio7"),Monumento.create("Sitio9"));		
+		List<Monumento> grupo2 = Arrays.asList(Monumento.create("Sitio4"),Monumento.create("Sitio5"),Monumento.create("Sitio6"));		
+		List<Monumento> grupo3 = Arrays.asList(Monumento.create("Sitio0"),Monumento.create("Sitio1"),Monumento.create("Sitio2"));		
 		
-		List<Monumento> grupo2 = new ArrayList<>();
-		grupo2.add(Monumento.create("Sitio4"));
-		grupo2.add(Monumento.create("Sitio5"));
-		grupo2.add(Monumento.create("Sitio6"));
-		
-		List<Monumento> grupo3 = new ArrayList<>();
-		grupo3.add(Monumento.create("Sitio0"));
-		grupo3.add(Monumento.create("Sitio1"));
-		grupo3.add(Monumento.create("Sitio2"));
-		
-		sitios.add(grupo1);
-		sitios.add(grupo2);
-		sitios.add(grupo3);
+		List<List<Monumento>> sitios = Arrays.asList(grupo1,grupo2,grupo3);
+
 		
 		for(List<Monumento> l : sitios)
 			System.out.println(Ejercicio_dos.apartadoC(l,grafoConexiones,grafoPrecedencias));

@@ -1,6 +1,5 @@
 package ejercicio_uno;
 
-import java.util.Arrays;
 import java.util.List;
 
 import us.lsi.ag.ValuesInRangeProblemAG;

@@ -19,8 +19,7 @@ public class Ejercicio_uno {
 				res += ("+x" + i + ";");
 		}
 
-		// Grupos
-		
+		// Grupos		
 
 		List<List<Integer>> g = gruposFactoria(gruposV);
 

@@ -64,9 +64,9 @@ public class Ejercicio_dos {
 		Double time = 0.0;
 		List<Monumento> newPath = new ArrayList<>();
 
+		ShortestPathAlgorithm<Monumento, Ruta> sp = new DijkstraShortestPath<>(gc);
+		ShortestPathAlgorithm<Monumento, Ruta> sp2 = new DijkstraShortestPath<>(gp);
 		for (int i = 0; i < l.size() - 1; i++) {
-			ShortestPathAlgorithm<Monumento, Ruta> sp = new DijkstraShortestPath<>(gc);
-			ShortestPathAlgorithm<Monumento, Ruta> sp2 = new DijkstraShortestPath<>(gp);
 			GraphPath<Monumento, Ruta> path = sp.getPath(l.get(i), l.get(i + 1));
 			GraphPath<Monumento, Ruta> pathPrecedencia = sp2.getPath(l.get(i), l.get(i + 1));
 			if (path == null) {
@@ -91,8 +91,8 @@ public class Ejercicio_dos {
 
 		return "Visita de " + l.toString() + " respetando el orden con menor tiempo (" + time + " mins):\n"
 				+ newPath.toString();
-
 	}
+	
 
 	public static void exportaGraph(Graph<Monumento, Ruta> g, String fn) {
 

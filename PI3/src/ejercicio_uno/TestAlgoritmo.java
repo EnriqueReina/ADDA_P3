@@ -30,7 +30,7 @@ public class TestAlgoritmo {
 		for(int i = 0; i < problemSol.size(); i++)
 		{
 			if(problemSol.get(i) == 1)
-				System.out.println("El barrio b"+i + " tiene estacion.");
+				System.out.println("El barrio b"+ (i+1) + " tiene estacion.");
 		}
 			
 		System.out.println("Coste (Numero de esatciones): " + -1 *  p.fitnessFunction(sol));

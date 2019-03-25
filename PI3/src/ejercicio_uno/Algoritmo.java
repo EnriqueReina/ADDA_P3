@@ -8,10 +8,12 @@ import us.lsi.ag.ValuesInRangeProblemAG;
 
 public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>> {
 
+	private Integer n;
 	private List<List<Integer>> barrios;
 	private List<Integer> barriosEstaciones = new ArrayList<>();
 
 	public Algoritmo(Integer n, String gv) {
+		this.n = n;
 		this.barriosEstaciones = generaList(n);
 		this.barrios = Ejercicio_uno.gruposFactoria(gv);
 	}
@@ -58,7 +60,7 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 	}
 
 	public Integer getVariableNumber() {
-		return this.barriosEstaciones.size();
+		return n;
 	}
 
 	@Override

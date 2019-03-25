@@ -71,7 +71,6 @@ public class Ejercicio_dos {
 			GraphPath<Monumento, Ruta> pathPrecedencia = sp2.getPath(l.get(i), l.get(i + 1));
 			if (path == null) {
 				return "No es posible según el grafo de conexiones visitar " + l.toString();
-
 			} else if (pathPrecedencia == null) {
 				return "No es posible según el grafo de precedencias visitar en el orden " + l.toString();
 			} else {

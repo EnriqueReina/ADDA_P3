@@ -105,21 +105,4 @@ public class Ejercicio_dos {
 		de.exportGraph(g, pw);
 	}
 
-	public static void caminoMinimo(Graph<Monumento, Ruta> g) {
-		Double min = 0.0;
-		List<String> vertexList = new ArrayList<>();
-
-		KruskalMinimumSpanningTree<Monumento, Ruta> caminoMinimo = new KruskalMinimumSpanningTree<>(g);
-		Set<Ruta> viasAMantener = caminoMinimo.getSpanningTree().getEdges();
-		System.out.println("Camino Mínimo: \n" + viasAMantener + "\n");
-		for (Ruta r : viasAMantener) {
-			min += r.getTiempo();
-			vertexList.add(r.getFrom().getName() + "->" + r.getTo().getName());
-		}
-		System.out.println("Lista de Monumentos: \n" + vertexList.toString() + "\n");
-		System.out.println("Longitud total: \n" + min + "\n");
-		System.out.println("Número de rutas: \n" + viasAMantener.size() + "\n");
-
-	}
-
 }

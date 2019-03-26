@@ -14,18 +14,10 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 
 	public Algoritmo(Integer n, String gv) {
 		this.n = n;
-		this.barriosEstaciones = generaList(n);
+		this.barriosEstaciones = new ArrayList<>();
 		this.barrios = Ejercicio_uno.gruposFactoria(gv);
 	}
 	
-	public List<Integer> generaList(Integer n)
-	{
-		List<Integer> res = new ArrayList<>();
-		for(int i = 0; i < n; i++)
-			res.add(0);
-		return res;
-	}
-
 	public List<List<Integer>> anyadeVals(List<Integer> l, List<List<Integer>> l2) {
 		List<List<Integer>> res = new ArrayList<>();
 

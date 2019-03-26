@@ -14,7 +14,6 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 
 	public Algoritmo(Integer n, String gv) {
 		this.n = n;
-		this.barriosEstaciones = new ArrayList<>();
 		this.barrios = Ejercicio_uno.gruposFactoria(gv);
 	}
 	

@@ -90,10 +90,8 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 				b += l.get(i);
 				b = b - 1;
 
-				if (b < 0) {
+				if (b < 0) 
 					u -= b;
-				} else
-					u += 0;
 			}
 		} else {
 			u = k;

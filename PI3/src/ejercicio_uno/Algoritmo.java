@@ -70,7 +70,7 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 		Double k = 10000000.0;
 		Double res = 0.0;
 		Double sum = 0.0;
-		int b = 0;
+		int aux = 0;
 		double u = 0.0;
 
 		List<Integer> sol = this.getSolucion(cr);
@@ -87,11 +87,11 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 			res += sum;
 
 			for (int i = 0; i < l.size(); i++) {
-				b += l.get(i);
-				b = b - 1;
+				aux += l.get(i);
+				aux -= 1;
 
-				if (b < 0) 
-					u -= b;
+				if (aux < 0) 
+					u -= aux;
 			}
 		} else {
 			u = k;

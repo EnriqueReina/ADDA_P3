@@ -41,7 +41,7 @@ public class TestAlgoritmo {
 		AlgoritmoAG.POPULATION_SIZE = 50;
 
 		StoppingConditionFactory.NUM_GENERATIONS = 50;
-		StoppingConditionFactory.SOLUTIONS_NUMBER_MIN = 2;
+		StoppingConditionFactory.SOLUTIONS_NUMBER_MIN = 1;
 		StoppingConditionFactory.FITNESS_MIN = 1;
 		StoppingConditionFactory.stoppingConditionType = StoppingConditionType.SolutionsNumber;
 	}

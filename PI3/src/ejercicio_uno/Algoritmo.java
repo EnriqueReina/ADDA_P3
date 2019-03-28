@@ -16,7 +16,7 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 		this.n = n;
 		this.barrios = Ejercicio_uno.gruposFactoria(gv);
 	}
-	
+
 	public List<List<Integer>> anyadeVals(List<Integer> l, List<List<Integer>> l2) {
 		List<List<Integer>> res = new ArrayList<>();
 
@@ -67,33 +67,50 @@ public class Algoritmo implements ValuesInRangeProblemAG<Integer, List<Integer>>
 
 	@Override
 	public Double fitnessFunction(ValuesInRangeChromosome<Integer> cr) {
-
-		Long k = 100000000l;
+		Double k = 10000000.0;
 		Double res = 0.0;
 		Double sum = 0.0;
 		int b = 0;
-		int u = 0;
+		double u = 0.0;
 
 		List<Integer> sol = this.getSolucion(cr);
 		List<List<Integer>> copiaBarriosVecinos = anyadeVals(sol, barrios);
-		List<Integer> l = sumaPesos(copiaBarriosVecinos);
 
-		for (Integer i : sol) {
-			sum += i;
-		}
+		if (!restriccion(copiaBarriosVecinos)) {
 
-		res += sum;
+			List<Integer> l = sumaPesos(copiaBarriosVecinos);
 
-		for (int i = 0; i < l.size(); i++) {
-			b += l.get(i);
-			b = b - 1;
-
-			if (b < 0) {
-				u -= b;
+			for (Integer i : sol) {
+				sum += i;
 			}
+
+			res += sum;
+
+			for (int i = 0; i < l.size(); i++) {
+				b += l.get(i);
+				b = b - 1;
+
+				if (b < 0) {
+					u -= b;
+				} else
+					u += 0;
+			}
+		} else {
+			u = k;
 		}
 
 		res = -res - k * u;
+
+		return res;
+	}
+
+	public Boolean restriccion(List<List<Integer>> gdv) {
+		Boolean res = false;
+
+		for (int i = 0; i < gdv.size(); i++) {
+			if (!gdv.get(i).contains(1))
+				return true;
+		}
 
 		return res;
 	}

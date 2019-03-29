@@ -20,17 +20,17 @@ public class TestAlgoritmo {
 		Integer n = 6;
 
 		// ejemplo 2
-		String grupoVecinos2 = "{b0, b4, b3, b1}, " + "{b0, b1, b2, b3}, " + "{b1, b2, b3, b6, b7, b8}, "
-				+ "{b3, b0, b1, b2, b4, b6}, " + "{b4, b0, b3, b5, b6}, " + "{b5, b4, b6, b7}, "
-				+ "{b6, b2, b3, b4, b5, b7}, " + "{b7, b5, b6, b2, b8, b9}, " + "{b8, b2, b7, b9, b10}, "
-				+ "{b9, b7, b8, b10}, " + "{b10, b8, b9}";
+//		String grupoVecinos2 = "{b0, b4, b3, b1}, " + "{b0, b1, b2, b3}, " + "{b1, b2, b3, b6, b7, b8}, "
+//				+ "{b3, b0, b1, b2, b4, b6}, " + "{b4, b0, b3, b5, b6}, " + "{b5, b4, b6, b7}, "
+//				+ "{b6, b2, b3, b4, b5, b7}, " + "{b7, b5, b6, b2, b8, b9}, " + "{b8, b2, b7, b9, b10}, "
+//				+ "{b9, b7, b8, b10}, " + "{b10, b8, b9}";
 
-		Integer n2 = 11;
+//		Integer n2 = 11;
 
 		System.out.println("Grupo de vecinos 1:");
 		ImprimeSolucion(n, grupoVecinos);
-		System.out.println("\nGrupo de vecinos 2:");
-		ImprimeSolucion(n2, grupoVecinos2);
+//		System.out.println("\nGrupo de vecinos 2:");
+//		ImprimeSolucion(n2, grupoVecinos2);
 
 	}
 

@@ -3,6 +3,7 @@ package ejercicio_uno_AlgoritmoG;
 import java.util.ArrayList;
 import java.util.List;
 
+import ejercicio_uno_LpSolve.Ejercicio_uno;
 import us.lsi.ag.ValuesInRangeChromosome;
 import us.lsi.ag.ValuesInRangeProblemAG;
 

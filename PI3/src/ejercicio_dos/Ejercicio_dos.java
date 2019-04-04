@@ -63,29 +63,41 @@ public class Ejercicio_dos {
 	public static String apartadoC(List<Monumento> l, Graph<Monumento, Ruta> gc, Graph<Monumento, Ruta> gp) {
 		Double time = 0.0;
 		List<Monumento> newPath = new ArrayList<>();
-
+		List<Ruta> rutas = new ArrayList<>();
+		
 		ShortestPathAlgorithm<Monumento, Ruta> sp = new DijkstraShortestPath<>(gc);
 		ShortestPathAlgorithm<Monumento, Ruta> sp2 = new DijkstraShortestPath<>(gp);
+		
 		for (int i = 0; i < l.size() - 1; i++) {
-			GraphPath<Monumento, Ruta> path = sp.getPath(l.get(i), l.get(i + 1));
+			time = 0.0;
 			GraphPath<Monumento, Ruta> pathPrecedencia = sp2.getPath(l.get(i), l.get(i + 1));
-			if (path == null) {
-				return "No es posible según el grafo de conexiones visitar " + l.toString();
-			} else if (pathPrecedencia == null) {
+			if (pathPrecedencia == null) {
 				return "No es posible según el grafo de precedencias visitar en el orden " + l.toString();
-			} else {
-				for (Ruta r : path.getEdgeList()) {
-					time += r.getTiempo();
-
-					Monumento mF = r.getFrom();
-					Monumento mT = r.getTo();
-
-					if (!newPath.contains(mF))
-						newPath.add(mF);
-
-					if (!newPath.contains(mT))
-						newPath.add(mT);
+			} else{
+				List<Monumento> l2 = pathPrecedencia.getVertexList();
+				for(int j = 0; j < l2.size()-1; j++)
+				{
+					GraphPath<Monumento, Ruta> path = sp.getPath(l2.get(j), l2.get(j + 1));
+					
+					if(path == null)
+						return "No es posible según el grafo de conexiones visitar " + l.toString();
+					
+					rutas.addAll(path.getEdgeList());
 				}
+				
+				for(Ruta r: rutas)
+				{
+					time += r.getTiempo();
+							
+					Monumento m1 = r.getFrom();
+					Monumento m2 = r.getTo();
+					
+					if(!newPath.contains(m1))
+						newPath.add(m1);
+					
+					if(!newPath.contains(m2))
+						newPath.add(m2);					
+				}				
 			}
 		}
 

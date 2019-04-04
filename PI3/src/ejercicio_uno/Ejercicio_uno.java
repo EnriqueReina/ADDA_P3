@@ -8,7 +8,7 @@ import us.lsi.common.Files2;
 
 public class Ejercicio_uno {
 
-	public static String CreaLp(Integer n, String f, String gruposV) {
+	public static String CreaLp(Integer n, String gruposV) {
 		// funcion a minimizar
 		String res = "";
 		res += "min: ";

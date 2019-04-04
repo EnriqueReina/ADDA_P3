@@ -12,7 +12,7 @@ public class TestEjercicio_uno {
 
 		Integer n = 6;
 		String grupoVecinos = "{b0, b1}, {b0, b1, b5}, {b2, b3}, {b2, b3, b4}, {b3, b4, b5}, {b1, b4, b5}";
-		String s = Ejercicio_uno.CreaLp(n, "ficheros/lpsolve.txt", grupoVecinos);
+		String s = Ejercicio_uno.CreaLp(n, grupoVecinos);
 		Ejercicio_uno.EscribeEnFichero(s, "generateLpSolve");
 
 		System.out.println("Archivo Generado: ");

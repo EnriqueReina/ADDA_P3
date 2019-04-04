@@ -1,4 +1,4 @@
-package ejercicio_uno_LpSolve;
+package ejercicio_uno_AlgoritmoG;
 
 import java.util.List;
 

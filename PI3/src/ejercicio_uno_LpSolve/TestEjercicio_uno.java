@@ -1,4 +1,4 @@
-package ejercicio_uno;
+package ejercicio_uno_LpSolve;
 
 import us.lsi.lpsolve.solution.AlgoritmoPLI;
 import us.lsi.lpsolve.solution.SolutionPLI;

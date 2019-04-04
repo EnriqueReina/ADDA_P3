@@ -1,4 +1,4 @@
-package ejercicio_uno;
+package ejercicio_uno_LpSolve;
 
 import java.util.ArrayList;
 import java.util.List;
